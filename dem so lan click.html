@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dem so lan click</title>
+</head>
+<body>
+    <button id ="btnInc">Increment</button>
+    <span id ="countElement"></span>
+
+    <script>
+        var btnInc = document.getElementById("btnInc");
+        var countElement = document.getElementById("countElement");
+        var count = 0;
+
+        btnInc.onclick = () => {
+            count++;
+            countElement.innerText = count;
+        }
+    </script>
+</body>
+</html>
