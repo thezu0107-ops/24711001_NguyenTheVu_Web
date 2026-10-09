@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An/hien phan tu</title>
+    <style>
+        .disappear {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id ="btnToggle">Toggle</button>
+    <button id ="btnShow">Show</button>
+    <span id ="display">Hello may cung!</span>
+
+    <script>
+        var btnToggle = document.getElementById("btnToggle");
+        var btnShow = document.getElementById("btnShow");
+        var display = document.getElementById("display");
+
+        btnToggle.onclick = () => {
+           display.classList.toggle("disappear")
+        }
+        
+        btnShow.onclick = () => {
+            display.classList.remove("disappear")
+        }
+
+    </script>
+</body>
+</html>
